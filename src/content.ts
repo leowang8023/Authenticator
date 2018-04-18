@@ -1,3 +1,5 @@
+let stopInject;
+
 chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
   switch (message.action) {
     case 'capture':
